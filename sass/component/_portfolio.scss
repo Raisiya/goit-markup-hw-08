@@ -1,0 +1,98 @@
+.portfolio {
+  margin-bottom: -30px;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+}
+.portfolio__item {
+  width: 450px;
+  height: auto;
+  margin-bottom: 30px;
+  background: #ffffff;
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    // box-sizing: border-box;
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+}
+.portfolio__img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.portfolio__link {
+  text-decoration: none;
+  font-style: normal;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+}
+
+.portfolio__item:hover .overlay__text {
+  transform: translateY(0);
+}
+.portfolio__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--second-title-color);
+}
+.portfolio__text {
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--main-text-color);
+}
+.portfolio__art {
+  padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
+.overlay {
+  position: relative;
+  overflow: hidden;
+}
+.overlay__text {
+  padding: 63px 24px;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+
+  color: var(--main-title-color);
+  background-color: var(--overlay-color);
+
+  position: absolute;
+  bottom: 0;
+
+  opacity: 1;
+  transition-timing-function: var(--transition-timing-function);
+  transform: translateY(100%);
+  transition-duration: var(--transition-duration);
+  overflow: auto;
+}
