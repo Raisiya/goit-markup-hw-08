@@ -1,3 +1,14 @@
+.section-portfolio {
+  @media screen and (min-width: 768px) {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 94px;
+    margin-bottom: 94px;
+  }
+}
 .portfolio {
   margin-bottom: -30px;
   display: flex;
@@ -79,7 +90,7 @@
   overflow: hidden;
 }
 .overlay__text {
-  padding: 63px 24px;
+  padding: 120px 24px;
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
@@ -95,4 +106,8 @@
   transform: translateY(100%);
   transition-duration: var(--transition-duration);
   overflow: auto;
+
+  @media screen and (min-width: 768px) {
+    padding: 63px 24px;
+  }
 }

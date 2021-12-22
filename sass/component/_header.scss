@@ -1,3 +1,6 @@
+.header {
+  position: relative;
+}
 .nav {
   display: flex;
   align-items: center;
@@ -10,6 +13,9 @@
   padding-top: 24px;
   padding-bottom: 25px;
   margin: 0;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 .nav__item {
   list-style: none;
@@ -105,4 +111,115 @@
 
 .contacts__icon {
   margin-right: 10px;
+}
+.nav-mobile {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: space-between;
+}
+.nav-tablet {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+// .menu-button .icon-close {
+//   display: none;
+// }
+
+// .menu-button.is-open .icon-close {
+//   display: block;
+// }
+
+// .menu-button.is-open .icon-menu {
+//   display: none;
+// }
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 48px;
+  padding-left: 40px;
+  padding-bottom: 48px;
+
+  // height: 796px;
+
+  // background-color: var(--modal-color);
+  background-color: wheat;
+
+  transform: translateX(100%);
+}
+.menu-container.is-open {
+  transform: translateX(50%);
+}
+.menu-page {
+  margin-bottom: 170px;
+}
+.menu-page__item {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  text-align: start;
+  letter-spacing: 0.02em;
+
+  color: var(--second-title-color);
+}
+
+.menu-page__link {
+  margin-bottom: 32px;
+  text-decoration: none;
+  color: inherit;
+}
+.menu-page__link--accent {
+  color: var(--accent-color);
+}
+
+.menu-contacts__link--tel {
+  display: block;
+  margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+.menu-contacts__link {
+  display: block;
+  margin-bottom: 64px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+}
+.menu-sotials {
+  display: flex;
+}
+.menu-sotials__item {
+  margin-right: 20px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+.menu-sotials__link {
+  color: var(--accent-color);
 }
