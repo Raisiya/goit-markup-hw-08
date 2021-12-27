@@ -73,11 +73,12 @@ img {
   text-decoration: none;
 }
 .title {
-  // margin-bottom: 50px;
-  // font-weight: 700;
-  // font-size: 36px;
-  // line-height: 1.17;
-  // text-align: center;
-  // letter-spacing: 0.03em;
   color: var(--second-title-color);
+}
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition-duration: 250ms;
+  transition-timing-function: var(--transition-timing-function);
 }
