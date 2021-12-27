@@ -51,14 +51,14 @@
                 <div class="menu-container">
                     <div class="mob-menu-top">
                         <button type="button" class="close-menu-btn">
-                            <svg class="menu-icon" width="19" height="19" aria-label="">
+                            <svg class="menu-icon" width="19" height="19">
                                 <use href="images/icons.svg#icon-close"></use>
                             </svg>
                         </button>
                         <ul class="menu list">
-                            <li class="menu__item"><a class="menu__link link">Студия</a></li>
-                            <li class="menu__item"><a class="menu__link link">Портфолио</a></li>
-                            <li class="menu__item"><a class="menu__link link">Контакты</a></li>
+                            <li class="menu__item"><a href="./index.html" class="menu__link link">Студия</a></li>
+                            <li class="menu__item"><a href="./portfolio.html" class="menu__link link">Портфолио</a></li>
+                            <li class="menu__item"><a href="" class="menu__link link">Контакты</a></li>
                         </ul>
                     </div>
                     <div class="mob-menu-bottom">
@@ -132,12 +132,9 @@
                     <ul class="about-us__list list">
                         <li class="about-us__item">
                             <img class="about-us__img"
-                            srcset="./images/box1-1x.jpg 1x,
-                            ./images/box1-2x.jpg 2x"
-                            srs="./images/box1-1x.jpg"
-                            alt="Cлайд1"
-                            width="370"
-                            height="294">
+                            srcset="./images/box1-1x.jpg 1x, ./images/box1-2x.jpg 2x"
+                            src="./images/box1-1x.jpg" alt="Слайд1" width="370" height="294"
+                            />
                         <h3 class="about-us__text">Десктопные приложения</h3></li>
                         <li class="about-us__item">
                             <img class="about-us__img"
@@ -146,7 +143,7 @@
                             src="./images/box2-1x.jpg"
                             alt="Cлайд2"
                             width="370"
-                            height="294">
+                            height="294"/>
                         <h3 class="about-us__text">Мобильные приложения</h3></li>
                         <li class="about-us__item">
                             <img class="about-us__img"
@@ -155,7 +152,7 @@
                             src="./images/box3-1x.jpg"
                             alt="Cлайд3"
                             width="370"
-                            height="294">
+                            height="294"/>
                         <h3 class="about-us__text">Дизайнерские решения</h3></li>
                     </ul>
                 </div>
@@ -461,6 +458,7 @@
                                     <use href="./images/icons.svg#icon-send"></use>
                                 </svg>
                             </button>
+                        </div>
                     </div>
                 </form>
         </div>
