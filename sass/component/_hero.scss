@@ -1,5 +1,9 @@
-.hero {
+.hero-container {
   width: 100%;
+  margin: 0 auto;
+}
+.hero {
+  max-width: 1600px;
   background: var(--second-background-color);
   padding: 118px 60px;
   text-align: center;
