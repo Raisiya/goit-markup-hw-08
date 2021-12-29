@@ -1,13 +1,11 @@
 .filtr {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 60px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
   }
 }
 .filtr__item {
@@ -25,7 +23,7 @@
 
 .filtr__button {
   border-radius: 4px;
-  min-width: 73;
+  min-width: 73px;
   height: 38px;
   padding: 6px 22px;
   text-align: center;

@@ -2,7 +2,6 @@
   width: 100%;
   background: var(--second-background-color);
   padding: 118px 60px;
-
   text-align: center;
   margin: 0 auto;
 
@@ -46,6 +45,7 @@
 
   @media screen and (min-width: 768px) {
     width: 768px;
+    padding: 118px 204px;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
@@ -66,8 +66,7 @@
   @media screen and (min-width: 1200px) {
     width: 1200px;
     height: 600px;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding: 200px;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
@@ -94,6 +93,7 @@
   letter-spacing: 0.06em;
   margin-bottom: 30px;
   color: var(--main-title-color);
+  text-transform: uppercase;
 
   @media screen and (min-width: 1200px) {
     font-size: 44px;

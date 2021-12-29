@@ -90,9 +90,11 @@ img {
 }
 
 .container {
-  width: 100%;
-  padding: 0px 15px;
-  margin: 0px auto;
+  width: 320px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (min-width: 480px) {
@@ -147,6 +149,7 @@ img {
 @media screen and (min-width: 768px) {
   .hero {
     width: 768px;
+    padding: 118px 204px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tab-1x.jpg);
   }
 }
@@ -161,8 +164,7 @@ img {
   .hero {
     width: 1200px;
     height: 600px;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding: 200px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-desk-1x.jpg);
   }
 }
@@ -181,6 +183,7 @@ img {
   letter-spacing: 0.06em;
   margin-bottom: 30px;
   color: var(--main-title-color);
+  text-transform: uppercase;
 }
 
 @media screen and (min-width: 1200px) {
@@ -212,6 +215,7 @@ img {
   display: flex;
   align-items: center;
   min-height: 60px;
+  justify-content: space-between;
 }
 
 @media screen and (min-width: 768px) {
@@ -221,8 +225,11 @@ img {
 }
 
 .nav {
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 1199px) {
@@ -375,24 +382,35 @@ img {
   margin-right: 10px;
 }
 
-.description {
-  margin-top: 43px;
-  margin-bottom: 77px;
+.section-description {
+  padding-top: 43px;
+  padding-bottom: 77px;
 }
 
 @media screen and (min-width: 768px) {
-  .description {
-    margin-top: 60px;
-    margin-bottom: 60px;
+  .section-description {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .description {
+  .section-description {
     width: 1200px;
     display: flex;
-    margin-top: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    margin-left: auto;
+    margin-right: auto;
   }
+}
+
+.description {
+  margin: 0 auto;
+}
+
+.description__list {
+  margin-bottom: -30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -402,6 +420,7 @@ img {
     flex-wrap: wrap;
     margin-left: -30px;
     margin-top: -30px;
+    margin-bottom: 0;
   }
 }
 
@@ -411,6 +430,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
+    margin-bottom: 0;
   }
 }
 
@@ -430,7 +450,6 @@ img {
 @media screen and (min-width: 1200px) {
   .description__item {
     width: calc(100% / 4 - 30px);
-    margin-bottom: 94px;
   }
 }
 
@@ -461,10 +480,6 @@ img {
   line-height: 1.71;
   color: var(--main-text-color);
   text-align: left;
-}
-
-.about-us {
-  padding-top: 60px;
 }
 
 @media screen and (max-width: 1199px) {
@@ -524,7 +539,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .team {
-    margin-top: 60px;
+    padding-top: 60px;
   }
 }
 
@@ -532,7 +547,8 @@ img {
   .team {
     width: 1200px;
     display: flex;
-    margin-top: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -563,10 +579,6 @@ img {
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-}
-
-.team__item:not(:last-child) {
-  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -657,12 +669,16 @@ img {
   fill: var(--first-button-color);
 }
 
+.client {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .client__list {
   display: flex;
   flex-wrap: wrap;
   margin-top: -30px;
   margin-left: -30px;
-  margin-bottom: 60px;
   justify-content: center;
 }
 
@@ -717,7 +733,6 @@ img {
 }
 
 .client__title {
-  margin-top: 60px;
   margin-bottom: 30px;
   font-weight: 700;
   font-size: 28px;
@@ -961,6 +976,7 @@ img {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
+  overflow-y: scroll;
   transition-duration: 250ms;
   transition-timing-function: var(--transition-timing-function);
 }
@@ -974,12 +990,12 @@ img {
 }
 
 .modal {
+  width: 320px;
   position: absolute;
   top: 50%;
   left: 50%;
   padding: 40px;
-  width: 450px;
-  height: 609px;
+  min-width: 320px;
   background-color: var(--main-title-color);
   border-radius: 4px;
   transform: translate(-50%, -50%);
@@ -987,10 +1003,15 @@ img {
   transition: visibility var(--transition-duration) var(--transition-timing-function);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
-    height: 581px;
   }
 }
 
@@ -1190,15 +1211,13 @@ img {
 .filtr {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 60px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
   .filtr {
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
   }
 }
 
@@ -1219,7 +1238,7 @@ img {
 
 .filtr__button {
   border-radius: 4px;
-  min-width: 73;
+  min-width: 73px;
   height: 38px;
   padding: 6px 22px;
   text-align: center;
@@ -1241,17 +1260,17 @@ img {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .section-portfolio {
-    margin-top: 60px;
-    margin-bottom: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .section-portfolio {
-    margin-top: 94px;
-    margin-bottom: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -1416,12 +1435,15 @@ img {
   padding-top: 48px;
   padding-bottom: 48px;
   padding-left: 40px;
+  margin-left: auto;
+  margin-right: auto;
   opacity: 1;
   background-color: var(--modal-color);
 }
 
 .menu-container {
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1474,6 +1496,7 @@ img {
 
 .menu-socials {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .menu-socials__item:not(:last-child) {
@@ -1497,5 +1520,9 @@ img {
   top: 726px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   transform: rotate(90deg);
+}
+
+.menu-socials__item::after:not(:last-child) {
+  margin-left: 10px;
 }
 /*# sourceMappingURL=main.css.map */
