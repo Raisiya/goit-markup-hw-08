@@ -3,11 +3,13 @@
     display: none;
   }
 }
+
 .about-us__list {
   display: flex;
   margin-top: 0;
   margin-bottom: 0;
 }
+
 .about-us__title {
   margin-bottom: 50px;
   font-weight: 700;
@@ -16,6 +18,7 @@
   text-align: center;
   color: var(--second-title-color);
 }
+
 .about-us__item {
   position: relative;
   margin-right: 30px;
