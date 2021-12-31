@@ -1070,7 +1070,7 @@ img {
   margin: 0 auto;
   background-color: var(--main-title-color);
   border-radius: 4px;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -45%);
   transition: opacity var(--transition-duration) var(--transition-timing-function);
   transition: visibility var(--transition-duration) var(--transition-timing-function);
 }
