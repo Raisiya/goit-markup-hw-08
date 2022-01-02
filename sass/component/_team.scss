@@ -6,16 +6,13 @@
   margin-right: auto;
   background-color: var(--second-button-color);
 
-  @media screen and (min-width: 768px) {
-    padding-top: 60px;
-  }
-
   @media screen and (min-width: 1200px) {
     display: flex;
     padding-top: 94px;
     padding-bottom: 94px;
   }
 }
+
 .team__list {
   margin-bottom: -30px;
   @media screen and (min-width: 768px) {
@@ -24,6 +21,7 @@
     flex-wrap: wrap;
     margin-left: -30px;
     margin-top: -30px;
+    margin-bottom: 0;
   }
   @media screen and (min-width: 1200px) {
     width: 1200px;
@@ -33,6 +31,7 @@
     flex-wrap: wrap;
   }
 }
+
 .team__item {
   display: flex;
   flex-direction: column;
@@ -50,6 +49,7 @@
     margin-top: 30px;
     margin-bottom: 0;
   }
+
   @media screen and (min-width: 1200px) {
     width: calc(100% / 4 - 30px);
   }
@@ -60,12 +60,11 @@
   font-weight: 700;
   font-size: 28px;
   line-height: 1.19;
-
   text-align: center;
   letter-spacing: 0.03em;
-
   color: #212121;
 }
+
 .team__img {
   margin-bottom: 30px;
 }
@@ -77,6 +76,7 @@
   line-height: 1.19;
   color: var(--second-title-color);
 }
+
 .team__text {
   margin-bottom: 30px;
   font-weight: 400;
@@ -85,6 +85,7 @@
   color: var(--main-text-color);
   margin-bottom: 16px;
 }
+
 .social-list {
   display: flex;
   justify-content: center;
@@ -92,6 +93,7 @@
   padding-bottom: 30px;
   padding-right: 32px;
 }
+
 .social-list__item {
   width: 44px;
   height: 44px;
@@ -117,6 +119,7 @@
     background-color: var(--accent-color);
   }
 }
+
 .social-list__icon {
   fill: var(--icon-color);
   .social-list__link:hover &,

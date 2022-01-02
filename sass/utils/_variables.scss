@@ -6,6 +6,7 @@ html {
 *::after {
   box-sizing: inherit;
 }
+
 h1,
 h2,
 h3,
@@ -59,6 +60,7 @@ body {
 .header {
   border-bottom: 1px solid #ececec;
 }
+
 img {
   display: block;
   max-width: 100%;
@@ -69,12 +71,15 @@ img {
   list-style: none;
   text-decoration: none;
 }
+
 .link {
   text-decoration: none;
 }
+
 .title {
   color: var(--second-title-color);
 }
+
 .is-hidden {
   visibility: hidden;
   opacity: 0;
