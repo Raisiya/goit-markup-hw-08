@@ -9,6 +9,7 @@
   opacity: 1;
   z-index: 2;
   overflow-y: scroll;
+  transition-property: opacity;
   transition-duration: 250ms;
   transition-timing-function: var(--transition-timing-function);
   &.is-hidden {
@@ -22,16 +23,10 @@
 
 .modal {
   position: relative;
-  top: 50%;
-  left: 50%;
   padding: 40px;
   margin: 0 auto;
-
   background-color: var(--main-title-color);
   border-radius: 4px;
-
-  transform: translate(-50%, -45%);
-
   transition: opacity var(--transition-duration)
     var(--transition-timing-function);
   transition: visibility var(--transition-duration)
@@ -39,7 +34,7 @@
 
   @media screen and (min-width: 480px) {
     width: 450px;
-    position: absolute;
+    position: relative;
   }
 
   @media screen and (min-width: 1200px) {
